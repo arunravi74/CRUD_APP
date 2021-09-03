@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<table >
+  <tr>
+    <th> Employee_Name </th>
+    <th> Employee_Salary </th>
+    <th> Employee_city </th>
+    </tr>  
+{% for i in emplist %}
+  <tr>
+  	<td>{{ i.emp_name }}</td>
+  	<td>{{ i.emp_salary }}</td>
+  	<td>{{ i.emp_city}}</td>
+    <td> <a href="remove_emp/{{ i.id }}"><button type="button">Remove_Employee</button>
+    <td> <a href="edit_emp/{{ i.id }}"><button type="button">update_Employee</button>
+
+  </tr>
+ {% endfor %}
+
+ </table>
+ <a href='create_emp'><button type="button">Add New Employee</button></a>
+{% endblock content %}
