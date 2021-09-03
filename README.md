@@ -1,2 +1,2 @@
 # CRUD_APP
-Basic crud application using Django
+A basic application for beginners to Create, Retrieve, Update and Delete the data by using Django with default db-sqlite3.
